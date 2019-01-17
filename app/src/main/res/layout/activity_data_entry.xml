@@ -85,5 +85,13 @@
                 android:text="@string/record" app:layout_constraintTop_toBottomOf="@+id/chosen"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"/>
+        <Button
+                android:text="Chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="0dp" android:id="@+id/chart" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/record"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

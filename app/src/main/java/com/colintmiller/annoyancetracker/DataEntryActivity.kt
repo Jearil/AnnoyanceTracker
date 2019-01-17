@@ -39,6 +39,12 @@ class DataEntryActivity : AppCompatActivity() {
         button9.setOnClickListener { setRequest(9) }
         button10.setOnClickListener { setRequest(10) }
         record.setOnClickListener { record() }
+        chart.setOnClickListener { startChart() }
+    }
+
+    fun startChart() {
+        val chartIntent = Intent(this, GraphActivity::class.java)
+        startActivity(chartIntent)
     }
 
     fun setRequest(number : Int) {

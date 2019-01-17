@@ -6,7 +6,11 @@ import java.util.*
  * Basic object for recording annoyances
  */
 
-class Annoyance(levelVal : Int) {
-    val level = levelVal
-    val created = Date().time
+data class Annoyance(val level: Int = 0,
+                     val created : Long = Date().time) : Comparable<Annoyance> {
+    override fun compareTo(other: Annoyance): Int {
+        if (this.created > other.created) return 1
+        if (this.created < other.created) return -1
+        return 0
+    }
 }
